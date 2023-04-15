@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'new.dart';
 
 void main() => runApp(MyApp());
 
@@ -25,10 +26,12 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text(this.title),
       ),
+      body: MyWidget(),
+      /*
       body: Center(
           child: Text(
         'Hello World, this is a flutter refresher',
-      )),
+      )), */
     );
   }
 }
