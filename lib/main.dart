@@ -1,20 +1,24 @@
 import 'package:flutter/material.dart';
+import 'new.dart';
 
-void main() => runApp(GgApp());
+void main() => runApp(MyApp());
 
-class GgApp extends StatelessWidget {
+class MyApp extends StatelessWidget {
+// This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'First App Title',
-      theme: ThemeData(primaryColor: Color.fromARGB(244, 238, 234, 8)),
-      //home:
+      title: 'Hello World Demo Application', // ?No change
+      theme: ThemeData(
+        primarySwatch: Colors.green,
+      ),
+      home: MyHomePage(title: 'Gg Home page'),
     );
   }
 }
 
-class GgHomePage extends StatelessWidget {
-  GgHomePage({Key? key, required this.title}) : super(key: key);
+class MyHomePage extends StatelessWidget {
+  MyHomePage({Key? key, required this.title}) : super(key: key); //? && required
   final String title;
   @override
   Widget build(BuildContext context) {
@@ -22,17 +26,12 @@ class GgHomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text(this.title),
       ),
+      //body: MyWidget(),
+
       body: Center(
           child: Text(
-        'Hello World, this is a flutter refresher',
-      )),
-
-      /*
-      body: Center(
-        child: Text(
-          "Hello my first flutter app",
-        ),
-      ),*/
+        'Creating my own widgets',
+      )), //*/
     );
   }
 }
