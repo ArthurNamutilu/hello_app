@@ -2,6 +2,7 @@ import 'package:flutter/material.dart'; // Material flutter package -> creates a
 
 void main() {
   runApp(MaterialApp(
+    // property : value(value can be widgets eg Scaffold, text, Centre)
     home: Scaffold(
       appBar: AppBar(
         title: Text('Gg App'),
