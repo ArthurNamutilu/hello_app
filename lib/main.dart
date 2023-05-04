@@ -12,13 +12,16 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
-      body: Center(
-          child: Image.network(
-              //image network || image asset folowed by relative path to sir with images
-              'https://images.unsplash.com/photo-1682588383984-9bce3d05c8a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=681&q=80')),
+      body: const Center(
+        child: Icon(
+          Icons.airport_shuttle,
+          color: Colors.amber,
+          size: 50.0,
+        ),
+      ),
       floatingActionButton: FloatingActionButton(
         child: Text('Click'),
-        backgroundColor: Colors.purple,
+        backgroundColor: Color.fromARGB(255, 31, 3, 36),
         onPressed: () {
           print('Dont push this button');
         },
