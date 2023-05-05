@@ -12,14 +12,12 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
-      body: Center(
-          child: IconButton(
-        onPressed: () {
-          print('Button clicked');
-        },
-        icon: Icon(Icons.alternate_email),
-        color: Colors.brown,
-      )),
+      body: Container(
+        padding: EdgeInsets.fromLTRB(30.0, 45.0, 10.0, 25.0),
+        margin: EdgeInsets.all(50.0),
+        color: Colors.grey,
+        child: Text('Second app'),
+      ),
       floatingActionButton: FloatingActionButton(
         child: Text('Click'),
         backgroundColor: Color.fromARGB(255, 31, 3, 36),
