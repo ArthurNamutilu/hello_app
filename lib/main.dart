@@ -14,25 +14,31 @@ class Home extends StatelessWidget {
       ),
       body: Row(
         children: [
+          Expanded(child: Image.asset('assets/flamingo.jpg'),
+            flex: 3,
+          ),
           Expanded(
+            flex: 1,
             child: Container(
               padding: EdgeInsets.all(30.0),
               color: Colors.cyan,
-              child: Text('One'),
+              child: Text('1'),
             ),
           ),
           Expanded(
+            flex: 1,
             child: Container(
               padding: EdgeInsets.all(30.0),
               color: Colors.pinkAccent,
-              child: Text('Two'),
+              child: Text('2'),
             ),
           ),
           Expanded(
+            flex: 1,
             child: Container(
               padding: EdgeInsets.all(30.0),
-              color: Colors.amber,
-              child: Text('Three'),
+              color: Colors.green,
+              child: Text('3'),
             ),
           )
         ],
